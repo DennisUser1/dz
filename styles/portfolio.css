@@ -2,101 +2,125 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.list {
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 /*-------------HEADER------------*/
 .container {
-    max-width: 1128px;
+    max-width: 1160px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
-.header {
-    margin: 24px auto 24px;
+.header>.container {
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.list {
-    list-style: none;
 }
 
 .header-list {
     display: flex;
 }
 
-.header-items {
-    margin-right: 76px;
-}
-
-.header-link {
+.logo-text {
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    font-family: 'Raleway', sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
     text-decoration: none;
+    margin-right: 76px;
 }
 
-.header-item {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4D5AE5;
-    text-decoration: none;
-}
-
-.header-items-list {
+.header-roster:not(:last-child) {
     margin-right: 40px;
 }
 
-li :active {
-    background: #404BBF;
-}
-
-.header-link-list {
+.header-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: #4D5AE5;
+}
+
+.header-link:active {
+    background: #9aa1ef;
 }
 
 .header-contact {
     display: flex;
+    margin-right: auto;
+    margin-left: 331px;
 }
 
-li :active {
-    background: #404BBF;
-}
-
-.header-title {
-    margin-right: 40px;
-}
-
-.header-text {
+.header-email {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-decoration: none;
+    margin-right: 40px;
 }
 
-/*---------------Section button------------------*/
-.all {
-    margin: 96px auto 72px;
-    max-width: 586px;
+.header-phone {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
 }
 
-.all-menu {
+.header-border {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+/*---------------Section------------------*/
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-right: -24px;
+    margin-bottom: 72px;
 }
 
 .btn {
-    box-sizing: border-box;
+    flex-basis: calc((100% - 96px)/ 5);
+    margin-right: 24px;
+}
+
+.btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -120,35 +144,27 @@ li :active {
     cursor: pointer;
 }
 
-/*---------------Section 2 Cards------------------*/
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.box-grow {}
-
 .grow {
-    margin: 0 48px auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -24px;
+    margin-bottom: -48px;
 }
 
-.grow-flex {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 48px;
+.grow-element {
+    display: inline-block;
+    flex-basis: calc((100% - 48px)/ 3);
+    margin-right: 24px;
+    margin-bottom: 48px;
+    border: 1px solid #E7E9FC;
+}
+
+.grow-element:nth-child(3n) {
+    margin-right: 0;
 }
 
 .grow-item {
-    padding: 32px 54px 32px 16px;
-    border: 1px solid #E7E9FC;
+    padding: 32px 16px 32px 16px;
 }
 
 .grow-pre-title {
@@ -164,29 +180,21 @@ li :active {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455
+    color: #434455;
 }
 
-img {
-    display: block;
-    max-width: 360px;
-    height: 300px;
-}
 
 /*---------------------Footer-------------------*/
 .footer {
     background: #2E2F42;
     padding: 100px 0 100px 156px;
-    margin-top: 72px;
 }
-
-.footer-items {}
 
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.16;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
@@ -197,7 +205,7 @@ img {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.16;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
