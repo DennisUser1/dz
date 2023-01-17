@@ -69,6 +69,7 @@ img {
 .section-hero .list,
 .projects .list,
 .team .list,
+.customers .list,
 .footer .container {
     display: flex;
 }
@@ -140,7 +141,9 @@ img {
 
 /*-------------SECTION SOLUTIONS------------*/
 .solutions {
-    background: var(--bg-gradient);
+    background: var(--bg-gradient), url(../images/people-office.jpg) center;
+    background-size: cover;
+    max-width: 1440px;
     text-align: center;
     padding: 188px 0 179px 0;
     margin: 0 auto;
@@ -201,8 +204,17 @@ img {
 .section-hero .list,
 .projects .list,
 .team .list,
+.customers .list,
 .portfolio .portfolio-list {
     gap: 24px;
+}
+
+.section-hero .wrapper-icon {
+    background: var(--icon-wrapper-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 24px 0;
+    text-align: center;
 }
 
 .section-hero .list .title {
@@ -231,6 +243,7 @@ img {
 }
 
 .projects .title,
+.customers .title,
 .team .title {
     font-size: 36px;
     line-height: 1.11;
@@ -263,7 +276,59 @@ img {
     margin-bottom: 8px;
 }
 
-/*---------------------Footer-------------------*/
+.team .caption .icons-list {
+    justify-content: center;
+}
+
+.team .caption .link {
+    display: block;
+    background: var(--icon-bg);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.team .caption .link:hover,
+.team .caption .link:focus {
+    background: var(--link-color-blue);
+}
+
+.team .caption .icon,
+.footer .social-media .icon {
+    display: inherit;
+}
+
+/*---------------------SECTION CUSTOMERS-------------------*/
+.customers {
+    padding: 130px 0 120px;
+}
+
+.customers .list-item {
+    flex-basis: calc(16.66667% - 20px);
+}
+
+.customers .link {
+    text-align: center;
+    padding: 16px 0;
+    display: block;
+    border: 1px solid var(--customers-link-color);
+    border-radius: 4px;
+}
+
+.customers .icon {
+    fill: var(--customers-link-color);
+}
+
+.customers .link:hover,
+.customers .link:focus {
+    border: 1px solid var(--link-color-blue);
+}
+
+.customers .link:hover .icon,
+.customers .link:focus .icon {
+    fill: var(--link-color-blue);
+}
+
+/*---------------------FOOTER-------------------*/
 .footer {
     background: var(--bg-color-dark);
     padding: 100px 0;
@@ -286,7 +351,35 @@ img {
     color: var(--footer-text-color);
 }
 
-/*---------------Section Portfolio------------------*/
+/*---------------------SOCIAL MEDIA-------------------*/
+
+.footer .social-media .title {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: inherit;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+.footer .social-media .list {
+    display: flex;
+    gap: 24px;
+}
+
+.footer .social-media .link {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.footer .social-media .link:hover,
+.footer .social-media .link:focus {
+    background: var(--hover-soc-link);
+}
+
+/*---------------SECTION PORTFOLIO------------------*/
 
 .portfolio {
     padding-top: 96px;
@@ -337,6 +430,13 @@ img {
     border: 1px solid var(--border-color);
     border-top: none;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio .link:hover .grow-item,
+.portfolio .link:focus .grow-item {
+    border: 0.5px solid var(--portfolio-border-color);
+    border-top: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio .grow .title {
