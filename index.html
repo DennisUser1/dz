@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./styles/modern-normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="page">
@@ -36,9 +37,9 @@
     <main class="main">
         <section class="solutions">
             <div class="container">
-                <h1 class="solutions-title">Effective Solutions for Your Business
+                <h1 class="solutions-title animate__animated animate__pulse">Effective Solutions for Your Business
                 </h1>
-                <button type="button" class="btn">Order Service</button>
+                <button data-modal-open type="button" class="btn">Order Service</button>
             </div>
         </section>
 
@@ -366,6 +367,16 @@
             </div>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close type="button" class="btn">
+                <svg class="icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-Close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
