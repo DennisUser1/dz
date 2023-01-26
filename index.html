@@ -37,8 +37,7 @@
     <main class="main">
         <section class="solutions">
             <div class="container">
-                <h1 class="solutions-title animate__animated animate__pulse">Effective Solutions for Your Business
-                </h1>
+                <h1 class="solutions-title animate__animated animate__pulse">Effective Solutions for Your Business</h1>
                 <button data-modal-open type="button" class="btn">Order Service</button>
             </div>
         </section>
@@ -68,7 +67,8 @@
                             </svg>
                         </div>
                         <h3 class="title">Punctuality</h3>
-                        <p class="pre-title"> Bring the key message to the brand's audience for the best price
+                        <p class="pre-title"> Bring the key message to the brand's audience for the best
+                            price
                             within
                             the
                             shortest possible
@@ -82,7 +82,8 @@
                             </svg>
                         </div>
                         <h3 class="title">Diligence</h3>
-                        <p class="pre-title"> Research and confirm brands that present the strongest digital growth
+                        <p class="pre-title"> Research and confirm brands that present the strongest digital
+                            growth
                             opportunities and minimize
                             risk.</p>
                     </li>
@@ -94,7 +95,8 @@
                             </svg>
                         </div>
                         <h3 class="title">Technologies</h3>
-                        <p class="pre-title"> Design practice focused on digital experiences. We bring forth a deep
+                        <p class="pre-title"> Design practice focused on digital experiences. We bring forth
+                            a deep
                             passion for
                             problem-solving.</p>
                     </li>
@@ -108,7 +110,8 @@
                 <ul class="list">
                     <li><img src="./images/Rectangle1.jpg" alt="monitor" width="360" height="300"></li>
                     <li><img src="./images/Rectangle2.jpg" alt="mobile" width="360" height="300"></li>
-                    <li><img src="./images/Rectangle3.jpg" alt="mobile in hand" width="360" height="300"></li>
+                    <li><img src="./images/Rectangle3.jpg" alt="mobile in hand" width="360" height="300">
+                    </li>
                 </ul>
             </div>
         </section>
@@ -365,6 +368,19 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="online">
+                <h3 class="title">Subscribe</h3>
+                <form action="#" class="online-form">
+                    <input type="email" class="subscribe" name="online-email" placeholder="E-mail" required>
+
+                    <button type="submit" class="btn">Subscribe
+                        <svg class="icon" width="24" height="20">
+                            <use href="./images/icons.svg#icon-Telegram"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -374,6 +390,47 @@
                     <use href="./images/icons.svg#icon-Close"></use>
                 </svg>
             </button>
+            <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+            <form action="#" class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="input-text">Name</label>
+                    <div class="input-wrapper">
+                        <input type="text" class="modal-input" name="user-name" id="user-name" required>
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-tel" class="input-text">Phone</label>
+                    <div class="input-wrapper">
+                        <input type="tel" class="modal-input" name="user-tel" id="user-tel" required>
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="input-text">Email</label>
+                    <div class="input-wrapper">
+                        <input type="email" class="modal-input" name="user-email" id="user-email" required>
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-text" class="input-text">Comment</label>
+                    <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Text input"></textarea>
+                </div>
+                <div class="modal-field">
+                    <input type="checkbox" class="input-check visually-hidden" name="policy" id="policy">
+                    <label for="policy" class="check-text">I accept the terms and conditions of the
+                        <a href="" class="privacy-policy">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
