@@ -575,6 +575,7 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 38px;
+    transition: border-color var(--transition);
 
     font-size: 14px;
     color: var(--modal-input-text);
@@ -616,11 +617,11 @@ img {
     margin-bottom: 16px;
 }
 
-.modal-comment:focus {
+.modal .modal-comment:focus {
     border-color: var(--modal-input-border);
 }
 
-.modal-comment::placeholder {
+.modal .modal-comment::placeholder {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
@@ -679,7 +680,6 @@ img {
     border: none;
 
     font-weight: 500;
-    font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--color-white);
