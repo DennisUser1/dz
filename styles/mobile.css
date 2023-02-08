@@ -1,0 +1,139 @@
+@media screen and (max-width: 447.98px) {
+    .header-contact .header-roster:last-child .menu-link {
+        font-size: calc(25px + (22 * 0.7) * ((100vw - 320px) / 448));
+    }
+
+    .modal {
+        width: 91.58888%;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+    .container {
+        max-width: 428px;
+    }
+    .header-contact .header-roster:last-child .menu-link {
+        font-size: 36px;
+    }
+    
+    .modal {
+        width: 392px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .top-wrapper .box {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .top-wrapper .box > .logo {
+        padding: 24px 0;
+    }
+    .burger-menu {
+        width: 32px;
+        height: 22px;
+        background-color: transparent;
+        border: none;
+    }
+    .burger-menu .icon {
+        stroke: var(--bg-color-dark);   
+    }
+
+/*-------------MOBILE MENU------------*/
+    .header .wrapper-menu {
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--modal-bg-color);
+        transition: opacity var(--transition), visibility var(--transition);
+        overflow: auto;
+    }
+
+    .header .wrapper-menu .box {
+        position: relative;
+        height: 100%;
+        padding-top: 80px;
+        padding: 80px 40px 40px;
+    }
+    .header .wrapper-menu .btn-close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .header .wrapper-menu .inner {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .header .inner .logo {
+        display: none;
+    }
+    .menu-list {
+        flex-direction: column;
+    }
+
+    .menu-list .menu-link {
+        font-size: 36px;
+    }
+
+    .menu-list .menu-link,
+    .header-contact .header-roster:last-child .menu-link {
+        font-weight: 700;
+        line-height: 1.11;
+    }
+
+    .header-contact {
+        flex-direction: column-reverse;
+        margin-top: auto;
+        gap: 40px;
+    }
+    .header-contact,
+    .header .header-navigation {
+      margin-bottom: 48px;
+    }
+
+    .header-contact .header-roster:first-child .menu-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    .header-contact .menu-link:hover,
+    .header-contact .menu-link:focus {
+        color: var(--btn-color);
+    } 
+
+    .header-contact .menu-link {
+        display: inline;
+    }
+    .is-hidden-menu {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .header .soc-list {
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+/*-------------SECTION SOLUTIONS------------*/
+    .solutions .container {
+        padding: 0;
+    }
+
+/*---------------MODAL WINDOW------------------*/
+
+    .modal {
+        padding: 72px 16px 24px;
+    }
+
+}

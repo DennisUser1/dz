@@ -1,0 +1,141 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+    }
+
+/*-------------HEADER------------*/
+
+.header {
+    height: 76px;
+}
+
+.header .logo {
+    margin-right: 76px;
+}
+
+.header-roster:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header .logo,
+.header .menu-link {
+  padding: 24px 0 28px;
+}
+
+.header .header-contact {
+    flex-direction: row;
+    padding: 0;
+}
+
+.header-contact .menu-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*-------------SECTION SOLUTIONS------------*/
+.solutions {
+    background: var(--bg-gradient), url(../images/people-office.jpg) center;
+    background-size: cover;
+    max-width: 1440px;
+    padding: 188px 0;
+    
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: var(--bg-gradient), url(../images/people-office-2x.jpg);
+    }
+}
+
+/*-------------SECTION HERO------------*/
+.section-hero {
+    padding-top: 120px;
+}
+
+.section-hero .list {
+    gap: 24px;
+}
+
+.section-hero .list-item {
+    flex-basis: calc(25% - 18px);
+}
+
+.section-hero .wrapper-icon {
+    display: block;
+    background: var(--icon-wrapper-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.section-hero .list .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.section-hero .list .pre-title {
+    font-weight: 400;
+}
+
+/*-------------SECTION PROJECTS------------*/
+.team, .projects {
+    padding: 120px 0;
+}
+
+.projects {
+    display: block;
+}
+
+.projects .list {
+    display: flex;
+    gap: 24px;
+}
+
+.projects .title { 
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--second-title-color);
+    margin-bottom: 72px;
+}
+
+/*---------------------FOOTER-------------------*/
+.footer {
+    padding: 100px 0;
+}
+
+.footer .box {
+    gap: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.footer .content {
+    margin-right: 120px;
+}
+
+.footer .social-media {
+    margin-right: 80px;
+}
+
+.footer .online .online-form {
+    flex-wrap: nowrap;
+}
+
+/*---------------SECTION PORTFOLIO------------------*/
+.portfolio {
+    padding: 96px 0 120px;
+}
+
+.portfolio .portfolio-list {
+    margin-bottom: 72px;
+}
+
+
+}

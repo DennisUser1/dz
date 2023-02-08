@@ -12,26 +12,79 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/modern-normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
 </head>
 
 <body class="page">
     <header class="header">
-        <div class="container">
-            <nav class="header-navigation">
-                <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-                <ul class="menu-list list">
-                    <li class="header-roster"><a class="menu-link" href="./index.html">Studio</a></li>
-                    <li class="header-roster"><a class="menu-link active" href="#">Portfolio</a></li>
-                    <li class="header-roster"><a class="menu-link" href="#">Contacts</a></li>
-                </ul>
-            </nav>
-            <ul class="header-contact list">
-                <li class="header-roster"><a class="menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="header-roster"><a class="menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
+        <div class="top-wrapper"> 
+           <div class="container box">
+              <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+                <button  type="button" class="burger-menu" data-menu-open>
+                    <svg class="icon" width="32" height="22">
+                       <use href="./images/icons.svg#icon-hamburger"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </header>
+
+        <div class="wrapper-menu is-hidden-menu" data-menu>
+            <div class="container box">
+                <button  type="button" class="btn-close" data-menu-close>
+                    <svg class="icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-Close"></use>
+                    </svg>
+                </button>
+                <div class="inner">
+                    <nav class="header-navigation">
+                        <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+                        <ul class="menu-list list">
+                            <li class="header-roster"><a class="menu-link" href="./index.html">Studio</a></li>
+                            <li class="header-roster"><a class="menu-link active" href="#">Portfolio</a></li>
+                            <li class="header-roster"><a class="menu-link" href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="header-contact list">
+                        <li class="header-roster"><a class="menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="header-roster"><a class="menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                    <ul class="soc-list list">
+                        <li class="list-item">
+                            <a href="https://www.instagram.com/" class="link" aria-label="Instagram" target="_blank">
+                                 <svg class="icon" width="24" height="24">
+                                     <use href="./images/icons.svg#icon-instagram"></use>
+                                 </svg>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                             <a href="https://twitter.com/?lang=uk" class="link" aria-label="Twitter" target="_blank">
+                                 <svg class="icon" width="24" height="24">
+                                     <use href="./images/icons.svg#icon-twitter"></use>
+                                 </svg>
+                             </a>
+                        </li>
+                        <li class="list-item">
+                             <a href="https://www.facebook.com/" class="link" aria-label="Facebook" target="_blank">
+                                 <svg class="icon" width="24" height="24">
+                                     <use href="./images/icons.svg#icon-facebook"></use>
+                                 </svg>
+                             </a>
+                         </li>
+                         <li class="list-item">
+                             <a href="https://www.linkedin.com/feed/" class="link" aria-label="Linkedin" target="_blank">
+                                 <svg class="icon" width="24" height="24">
+                                     <use href="./images/icons.svg#icon-linkedin"></use>
+                                 </svg>
+                             </a>
+                         </li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </header> 
 
     <main>
         <section class="portfolio">
@@ -161,7 +214,7 @@
 
     <!--Footer page-->
     <footer class="footer">
-        <div class="container">
+        <div class="container box">
             <div class="content">
                 <a href="./index.html" class="logo">
                     <span class="logo-web">Web</span>Studio
@@ -216,6 +269,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

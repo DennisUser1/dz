@@ -1,0 +1,152 @@
+@media screen and (min-width:768px) {
+    .container {
+            max-width: 768px;
+    }
+
+/*-------------HEADER------------*/
+
+.header .top-wrapper,
+.header .btn-close,
+.header .soc-list {
+  display: none;
+}
+
+.header .inner .header-navigation {
+    margin-right: auto;
+}
+
+.header .wrapper-menu .logo {
+    display: block;
+    margin-right: 123px;
+}
+
+.header .logo,
+.header-navigation .menu-link {
+    padding: 24px 0 22px;
+}
+
+.menu-list .menu-link {
+    position: relative;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.menu-list .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--link-color-blue);
+    border-radius: 2px;
+}
+.header .header-contact {
+    flex-direction: column;
+    gap: 4px;
+    padding: 24px 0 10px;
+}
+
+.header-contact .menu-link {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+}
+
+/*-------------SECTION SOLUTIONS------------*/
+.solutions {
+    background: var(--bg-gradient), url(../images/people-office.jpg) center;
+    background-size: cover;
+    max-width: 768px;    
+    padding: 112px 0 108px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.solutions {
+    background-image: var(--bg-gradient), url(../images/people-office-2x.jpg);
+}
+}
+
+.solutions .solutions-title {
+    width: 495.5px;
+    font-size: 56px;
+    line-height: 1.07;
+}
+
+/*-------------SECTION HERO------------*/
+.section-hero .list,
+.costumers .list,
+.footer .box {
+    gap: 72px 24px;
+}
+
+.section-hero .list-item {
+    flex-basis: calc(50% - 12px);
+}
+
+.section-hero .list .title {
+    text-align: left;
+}
+
+/*-------------SECTION TEAM------------*/
+.team {
+    padding: 96px 0 104px;
+}
+
+.team .list {
+    row-gap: 64px;
+    column-gap: 24px;
+}
+
+/*---------------------SECTION CUSTOMERS-------------------*/
+.costumers .list-item {
+    flex-basis: 0;
+}
+
+.costumers .link {
+    padding: 13px 31px;
+}
+
+/*---------------SECTION PORTFOLIO------------------*/
+.portfolio {
+    padding: 64px 0 96px;
+}
+
+.portfolio .portfolio-list {
+    margin-bottom: 64px;
+}
+
+.portfolio .portfolio-list {
+    justify-content: center;
+}
+
+.portfolio .grow {
+    justify-content: start;
+}
+
+/*---------------------FOOTER-------------------*/
+.footer .box {
+    width: 558px;
+    justify-content: start;
+}
+
+.footer .logo {
+    margin-bottom: 16px;
+}
+
+.footer .social-media .title {
+    text-align: left;
+}
+
+.footer .content,
+.footer .subscribe {
+    width: 264px;
+}
+
+/*---------------------MODAL-------------------*/
+.modal {
+    padding: 72px 24px 24px;
+    width: 408px;
+}
+}
