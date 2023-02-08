@@ -1,6 +1,6 @@
 @media screen and (max-width: 447.98px) {
     .header-contact .header-roster:last-child .menu-link {
-        font-size: calc(25px + (22 * 0.7) * ((100vw - 320px) / 448));
+        font-size: 26px;
     }
 
     .modal {
