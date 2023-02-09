@@ -13,16 +13,13 @@
     margin-right: 76px;
 }
 
-.header-roster:not(:last-child) {
-    margin-right: 40px;
-}
-
 .header .logo,
 .header .menu-link {
   padding: 24px 0 28px;
 }
 
 .header .header-contact {
+    gap: 40px;
     flex-direction: row;
     padding: 0;
 }
@@ -35,7 +32,7 @@
 
 /*-------------SECTION SOLUTIONS------------*/
 .solutions {
-    background: var(--bg-gradient), url(../images/people-office.jpg) center;
+    background: var(--bg-gradient), url(../images/solutions-bg-img-desk.jpg) center;
     background-size: cover;
     max-width: 1440px;
     padding: 188px 0;
@@ -45,7 +42,7 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .solutions {
-      background-image: var(--bg-gradient), url(../images/people-office-2x.jpg);
+      background-image: var(--bg-gradient), url(../images/solutions-bg-img-desk-2x.jpg);
     }
 }
 
@@ -124,7 +121,7 @@
     margin-right: 80px;
 }
 
-.footer .online .online-form {
+.footer .subscribe .form {
     flex-wrap: nowrap;
 } 
 

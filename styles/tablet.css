@@ -55,7 +55,7 @@
 
 /*-------------SECTION SOLUTIONS------------*/
 .solutions {
-    background: var(--bg-gradient), url(../images/people-office.jpg) center;
+    background: var(--bg-gradient), url(../images/solutions-bg-img-tab.jpg) center;
     background-size: cover;
     max-width: 768px;    
     padding: 112px 0 108px;
@@ -64,7 +64,7 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 .solutions {
-    background-image: var(--bg-gradient), url(../images/people-office-2x.jpg);
+    background-image: var(--bg-gradient), url(../images/solutions-bg-img-tab-2x.jpg);
 }
 }
 
@@ -76,7 +76,7 @@
 
 /*-------------SECTION HERO------------*/
 .section-hero .list,
-.costumers .list,
+.customers .list,
 .footer .box {
     gap: 72px 24px;
 }
@@ -101,11 +101,11 @@
 
 /*---------------------SECTION CUSTOMERS-------------------*/
 
-.costumers .list-item {
+.customers .list-item {
     flex-basis: 0;
 }
 
-.costumers .link {
+.customers .link {
     padding: 13px 31px;
 }
 
@@ -133,15 +133,15 @@
 }
 
 .footer .logo {
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
 
-.footer .social-media .title {
+.footer .title {
     text-align: left;
 }
 
 .footer .content,
-.footer .subscribe {
+.footer .form .input {
     width: 264px;
 }
 

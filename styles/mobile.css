@@ -1,6 +1,6 @@
 @media screen and (max-width: 447.98px) {
     .header-contact .header-roster:last-child .menu-link {
-        font-size: 26px;
+        font-size: calc(25px + (22 * 0.7) * ((100vw - 320px) / 448));
     }
 
     .modal {
@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (min-width: 448px) and (max-width: 767.98px) {
     .container {
         max-width: 428px;
     }
@@ -130,6 +130,11 @@
         padding: 0;
     }
 
+    .footer .subscribe .input {
+        padding: 9.8px 16px;
+        width: 100%;
+       
+    }
 /*---------------MODAL WINDOW------------------*/
 
     .modal {

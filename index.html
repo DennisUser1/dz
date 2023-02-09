@@ -161,10 +161,12 @@
             <div class="container">
                 <h2 class="title">What are we doing</h2>
                 <ul class="list">
-                    <li><img src="./images/Rectangle1.jpg" alt="monitor" width="360" height="300"></li>
-                    <li><img src="./images/Rectangle2.jpg" alt="mobile" width="360" height="300"></li>
-                    <li><img src="./images/Rectangle3.jpg" alt="mobile in hand" width="360" height="300">
-                    </li>
+                    <li><img src="./images/Rectangle1.jpg" alt="monitor" 
+                        srcset="./images/Rectangle1-2х.jpg" width="360" height="300"></li>
+                    <li><img src="./images/Rectangle2.jpg" alt="mobile" 
+                        srcset="./images/Rectangle2-2х.jpg" width="360" height="300"></li>
+                    <li><img src="./images/Rectangle3.jpg" alt="mobile in hand" 
+                        srcset="./images/Rectangle3-2х.jpg" width="360" height="300"></li>
                 </ul>
             </div>
         </section> 
@@ -342,42 +344,42 @@
                 <h2 class="title">Customers</h2>
                 <ul class="list">
                     <li class="list-item">
-                        <a href="#" class="link">
+                        <a href="#" class="link" aria-label="Client 1">
                             <svg class="icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-Customers-Logo1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="link">
+                        <a href="#" class="link" aria-label="Client 2">
                             <svg class="icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-Customers-Logo2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="link">
+                        <a href="#" class="link" aria-label="Client 3">
                             <svg class="icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-Customers-Logo3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="link">
+                        <a href="#" class="link" aria-label="Client 4">
                             <svg class="icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-Customers-Logo4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="link">
+                        <a href="#" class="link" aria-label="Client 5">
                             <svg class="icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-Customers-Logo5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="link">
+                        <a href="#" class="link" aria-label="Client 6">
                             <svg class="icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-Customers-Logo6"></use>
                             </svg>
@@ -433,11 +435,10 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="online">
+            <div class="subscribe">
                 <h3 class="title">Subscribe</h3>
-                <form action="#" class="online-form">
-                    <input type="email" class="subscribe" name="online-email" placeholder="E-mail" required>
+                <form action="#" class="form">
+                    <input type="email" class="input" name="online-email" placeholder="E-mail" required/>
 
                     <button type="submit" class="btn">Subscribe
                         <svg class="icon" width="24" height="20">
@@ -457,11 +458,11 @@
                 </svg>
             </button>
             <h2 class="modal-title">Leave your contacts and we will call you back</h2>
-            <form action="#" class="modal-form">
+            <form action="#" class="form">
                 <div class="modal-field">
                     <label for="user-name" class="input-text">Name</label>
                     <div class="input-wrapper">
-                        <input type="text" class="modal-input" name="user-name" id="user-name" required>
+                        <input type="text" class="input" name="user-name" id="user-name" required>
                         <svg class="input-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
@@ -470,7 +471,7 @@
                 <div class="modal-field">
                     <label for="user-tel" class="input-text">Phone</label>
                     <div class="input-wrapper">
-                        <input type="tel" class="modal-input" name="user-tel" id="user-tel" required>
+                        <input type="tel" class="input" name="user-tel" id="user-tel" required>
                         <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -479,7 +480,7 @@
                 <div class="modal-field">
                     <label for="user-email" class="input-text">Email</label>
                     <div class="input-wrapper">
-                        <input type="email" class="modal-input" name="user-email" id="user-email" required>
+                        <input type="email" class="input" name="user-email" id="user-email" required>
                         <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>

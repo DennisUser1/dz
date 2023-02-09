@@ -174,7 +174,7 @@ img {
 
 /*-------------SECTION SOLUTIONS------------*/
 .solutions {
-    background: var(--bg-gradient), url(../images/people-office.jpg) center;
+    background: var(--bg-gradient), url(../images/solutions-bg-img-mob.jpg) center;
     background-size: cover;
     text-align: center;
     max-width: 428px;
@@ -184,7 +184,7 @@ img {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .solutions {
-        background-image: var(--bg-gradient), url(../images/people-office-2x.jpg);
+        background-image: var(--bg-gradient), url(../images/solutions-bg-img-mob-2x.jpg);
       }
 }
 
@@ -215,10 +215,10 @@ img {
 
 .solutions .btn:hover,
 .solutions .btn:focus,
-.footer .online .btn:hover,
-.footer .online .btn:focus,
-.modal .modal-form .btn:hover,
-.modal .modal-form .btn:focus {
+.footer .subscribe .btn:hover,
+.footer .subscribe .btn:focus,
+.modal .form .btn:hover,
+.modal .form .btn:focus {
     background: var(--btn-active);
 }
 
@@ -245,10 +245,10 @@ img {
 }
 
 .section-hero .list,
-.team .list
+.team .list,
 .footer .box {
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap; 
     gap: 72px;
 }  
 
@@ -363,11 +363,10 @@ img {
     width: 16px;
     height: 16px;
     fill: var(--icon-wrapper-color);
-    transition-property: color, border, background-color, transform;
+    /* transition-property: color, border, background-color, transform; */
     transition-duration: 250ms;
     transition: transform 1250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
 }
 
 /*---------------------SECTION CUSTOMERS-------------------*/
@@ -391,6 +390,7 @@ img {
     padding: 13px 0; 
     border: 1px solid var(--customers-link-color);
     border-radius: 4px;
+    transition-property: color, border, transform;
     transition: border-color var(--transition);
 }
 
@@ -402,6 +402,7 @@ img {
 .customers .link:hover,
 .customers .link:focus {
     border: 1px solid var(--link-color-blue);
+    transform: scale(1.15);
 }
 
 .customers .link:hover .icon,
@@ -430,7 +431,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    margin-bottom: 16px;
+    margin:0 auto 16px;
     color: var(--footer-logo-color);
 }
 
@@ -475,14 +476,14 @@ img {
     background: var(--hover-soc-link);
 }
 
-.footer .online .online-form {
+.footer .subscribe .form {
     display: flex; 
     gap: 24px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     justify-content: center;
 }
 
-.footer .subscribe {
+.footer .subscribe .input {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -495,18 +496,18 @@ img {
     color: var(--color-white);
 }
 
-.footer .subscribe:focus {
+.footer .input:focus {
     border-color: var(--modal-input-border);
 }
 
-.footer .subscribe::placeholder {
+.footer .input::placeholder {
     font-size: 12px;
     line-height: 2.0;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .online .btn {
+.footer .subscribe .btn {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -518,7 +519,7 @@ img {
     gap: 16px;
     
     transition: background-color var(--transition);
-    display: flex;
+    display: flex; 
     align-items: center;
 }
 
@@ -606,7 +607,7 @@ img {
     position: relative;
 }
 
-.modal .modal-input {
+.modal .input {
     width: 100%;
     height: 40px;
     background-color: transparent;
@@ -620,11 +621,11 @@ img {
     outline: none;
 }
 
-.modal .modal-input:focus {
+.modal .input:focus {
     border-color: var(--modal-input-border);
 }
 
-.modal .modal-input:focus+.input-icon {
+.modal .input:focus+.input-icon {
     fill: var(--modal-input-border);
 }
 
@@ -707,7 +708,7 @@ img {
     align-items: center;
 }
 
-.modal .modal-form .btn {
+.modal .form .btn {
     width: 169px;
     height: 56px;
     margin: 0 auto;
