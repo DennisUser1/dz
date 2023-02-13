@@ -49,6 +49,7 @@
 /*-------------SECTION HERO------------*/
 .section-hero {
     padding-top: 120px;
+    padding-bottom: 0;
 }
 
 .section-hero .list {
@@ -133,6 +134,5 @@
 .portfolio .portfolio-list {
     margin-bottom: 72px;
 }
-
 
 }
